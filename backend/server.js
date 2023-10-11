@@ -33,7 +33,7 @@ app.get('/country/:countryName', async (req, res) => {
         }else {
             console.log(error);
             return res.status(500).json({
-            message: 'Backend server error'
+            message: 'Backend server error.'
                 })
             }    
         }
