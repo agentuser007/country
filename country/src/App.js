@@ -18,7 +18,7 @@ function App() {
         setError(null);
       }
     } catch (error) {
-      if( String(error).includes('response')){
+      if( error.hasOwnProperty('response')){
         setError(error.response.data.message);
       } else {
         setError(error.message);
