@@ -18,8 +18,12 @@ function App() {
         setError(null);
       }
     } catch (error) {
+      if( String(error).includes('response')){
+        setError(error.response.data.message);
+      } else {
+        setError(error.message);
+      }    
       setCountryData(null);
-      setError(error.response.data.message);
     }
   };
 
