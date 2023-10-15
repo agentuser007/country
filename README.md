@@ -16,7 +16,7 @@ This is a web application that allows you to search for and display information 
 
 - **Frontend**: React, Bootstrap, react-json-view
 - **Backend**: Node.js, Express, Axios, CORS
-- **Deployment**: AWS EC2 (ubuntu), GitHub, PM2, Node.js
+- **Deployment**: AWS EC2 (ubuntu), GitHub, PM2, Nginx
 
 ## Setup
 
@@ -52,5 +52,4 @@ curl http://localhost:8080/country/us
 ## Deployment
 
 The whole project was deployed on AWS EC2 instance. Access the web page at [this URL](http://34.254.179.106/).
-
 

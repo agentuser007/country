@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import CountryList from './components/CountryList';
 
-const API_URL = 'https://restcountries.com/v3.1/name/';
+const API_URL = 'http://34.254.179.106:8080/country/';
 
 function App() {
   const [countryName, setCountryName] = useState('');
