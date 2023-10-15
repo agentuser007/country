@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import CountryList from './components/CountryList';
 
-const API_URL = 'http://localhost:8080/country/';
+const API_URL = 'https://restcountries.com/v3.1/name/';
 
 function App() {
   const [countryName, setCountryName] = useState('');
@@ -36,6 +36,8 @@ function App() {
     
     <div className="container mt-5">
       <h1 className="mb-4">Country Information App</h1>
+
+
       <form onSubmit={handleSubmit}>
       <div className="input-group mb-3">
         <input required
@@ -48,6 +50,7 @@ function App() {
         <button className="btn btn-primary" onClick={fetchCountryData} type='submit' onSubmit={handleSubmit}>
           Get Info
         </button>
+        
       
       </div>
       </form>

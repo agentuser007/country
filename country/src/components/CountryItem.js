@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CountryDetails from './CountryDetails';
 import JsonDisplay from '../utils/JsonDisplay';
+import LanguageSelector from './LanguageSelector';
 
 
 const CountryItem = ({ country }) => {
@@ -10,7 +11,7 @@ const CountryItem = ({ country }) => {
     setIsOpen(!isOpen);
   };
 
-const { name, capital, population, currencies, languages, flag } = country;
+const { capital, population, currencies, languages, flag } = country;
 
 
   return (
@@ -38,6 +39,8 @@ const { name, capital, population, currencies, languages, flag } = country;
             <p className="card-text">
             <strong>Languages:</strong> </p>
             <JsonDisplay data={languages} />
+
+            <LanguageSelector translations={country.translations} />
             
            
             <p>More details:</p>
