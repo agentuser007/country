@@ -10,6 +10,8 @@ const CountryList = ({ countryData, currentPage, itemsPerPage  }) => {
 
   if(Object.keys(countryData).length < indexOfLastCountry){
     currentCountries = Object.values(countryData).slice(indexOfFirstCountry, Object.keys(countryData).length);
+  } else if(itemsPerPage > Object.keys(countryData).length){
+    currentCountries = countryData;
   }
 
   return (
