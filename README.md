@@ -49,7 +49,17 @@ curl http://localhost:8080/country/us
 - `components` folder: This folder contains the reusable UI components that are used in different part of the web.
 - `utils` folder: This folder contains utility functions such as formatting Json.
 
+## Testing
+
+To run tests for the backend, use the following command:
+
+```bash
+npm test
+```
+
+Tests are written using Jest and Supertest. Make sure the server is running before running the tests.
+
 ## Deployment
 
-The whole project was deployed on AWS EC2 instance. Access the web page at [this URL](http://34.254.179.106/).
+The whole project was deployed on AWS EC2 instance. Access the web page at [this URL](http://54.171.248.56/). 
 
