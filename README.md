@@ -57,7 +57,7 @@ To run tests for the backend, use the following command:
 npm test
 ```
 
-Tests are written using Jest and Supertest. Make sure the server is running before running the tests.
+Tests are written using Jest and Supertest.
 
 ## Deployment
 
