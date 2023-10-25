@@ -5,7 +5,7 @@ import CountryList from './components/CountryList';
 import Loading from './components/Loading';
 import Pagination from './components/Pagination';
 
-const API_URL = 'http://34.254.179.106:8080/country/';
+const API_URL = 'http://54.171.248.56:8080/country/';
 
 function App() {
   const [countryName, setCountryName] = useState('');
@@ -27,6 +27,7 @@ function App() {
         setLoading(false);
       }
     } catch (error) {
+      // Judge if the error is from the backend or from the frontend
       if( error.hasOwnProperty('response')){
         setError(error.response.data.message);
       } else {
@@ -37,6 +38,7 @@ function App() {
     }
   };
 
+  // Handle form submit with enter key
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchCountryData();

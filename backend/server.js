@@ -8,6 +8,10 @@ const port = 8080;
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Server is running');
+});
+
 app.get('/country/:countryName', async (req, res) => {
     try {
         if (!req.params.countryName) {
