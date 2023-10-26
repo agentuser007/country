@@ -42,22 +42,35 @@ curl http://localhost:8080/country/us
 
 ## Folder Structure
 
-**Frontend**:
+**Frontend** ```country```:
 
 `src` folder: This folder contains the source code of the React app, such as the components, the styles, the hooks, and the utilities. The subfolders are:
 
-- `components` folder: This folder contains the reusable UI components that are used in different part of the web.
-- `utils` folder: This folder contains utility functions such as formatting Json.
+- `components` folder: Contains the reusable UI components that are used in different part of the web.
+- `utils` folder: Contains utility functions such as formatting Json.
+- ```cypress``` folder: Contains cypress test file.
 
 ## Testing
 
-To run tests for the backend, use the following command:
+* The ```country``` folder includes Cypress E2E tests to ensure the application's functionality. 
+
+1. To open the Cypress Test Runner, use the following command:
+
+   ```bash
+   npx cypress open
+   ```
+
+2. Select and run E2E test from the Cypress Test Runner interface.
+
+
+
+* To run tests for the backend, use the following command:
 
 ```bash
 npm test
 ```
 
-Tests are written using Jest and Supertest.
+​		Tests are written using Jest and Supertest.
 
 ## Deployment
 
