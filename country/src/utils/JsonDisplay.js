@@ -1,6 +1,9 @@
 // Desc: Component to display JSON data in a nested div format
 
 const renderNestedDivs = (data) => {
+  if (typeof data !== 'object') {
+    return;
+  }
     return (
       <div>
         {Object.keys(data).map((key, index) => (

@@ -5,7 +5,7 @@ import CountryList from './components/CountryList';
 import Loading from './components/Loading';
 import Pagination from './components/Pagination';
 
-const API_URL = 'http://54.171.248.56:8080/country/';
+const API_URL = 'https://restcountries.com/v3.1/name/';
 
 function App() {
   const [countryName, setCountryName] = useState('');

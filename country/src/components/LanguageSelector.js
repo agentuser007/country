@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 
 // Choose a language from the dropdown menu to see the translation
 const LanguageSelector = ({ translations }) => {
+
   const [selectedLanguage, setSelectedLanguage] = useState('ara');
+  if (!translations) {
+    return null;
+  }
+  
 
   const handleLanguageChange = (e) => {
     setSelectedLanguage(e.target.value);
