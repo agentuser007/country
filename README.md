@@ -74,5 +74,5 @@ npm test
 
 ## Deployment
 
-The whole project was deployed on AWS EC2 instance. Access the web page at [this URL](http://54.171.248.56/). 
+The whole project was deployed on AWS EC2 instance. Access the web page at [this URL](http://34.242.196.33/). 
 
