@@ -5,7 +5,7 @@ import CountryList from './components/CountryList';
 import Loading from './components/Loading';
 import Pagination from './components/Pagination';
 
-const API_URL = 'http://54.171.248.56:8080/country/';
+const API_URL = 'http://34.242.196.33:8080/country/';
 
 function App() {
   const [countryName, setCountryName] = useState('');
